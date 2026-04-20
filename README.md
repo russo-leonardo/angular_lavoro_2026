@@ -1,0 +1,1 @@
+# angular_lavoro_2026
