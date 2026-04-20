@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { UserList } from '../user-list/user-list';
 
 @Component({
@@ -8,9 +8,10 @@ import { UserList } from '../user-list/user-list';
   styleUrl: './user-item.css',
 })
 export class UserItem {
-name: string;
-constructor() { 
-    this.name = 'Felipe'; // setta il nome nel costruttore
+  @Input() name: string=''; 
+  
+  constructor() { 
+
   }
-}
+ }
 

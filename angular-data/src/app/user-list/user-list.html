@@ -1,5 +1,7 @@
 <ul>
-    @for (name of names; track name) {
-        <li>{{name}}</li>
+  @for (name of names; track name) {
+       <li>
+        <app-user-item [name]="name"></app-user-item>
+      </li>
     }
-  </ul>
+</ul>
